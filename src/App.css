@@ -27,7 +27,7 @@ label {
 
 .App {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr)
 }
 
 .cards-container {
@@ -35,16 +35,18 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #7357be;
 }
 
 .users {
-  background: linear-gradient(#7357be,#674eac);
+  grid-column: 2 / 3;
+  background-color: #7357be;
   height: 100vh;
 }
 
 .form {
-  width: 350px;
   margin: 50px auto;
+  width: 350px;
 }
 
 .card {
