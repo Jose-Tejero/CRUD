@@ -241,6 +241,7 @@ label {
 
 .modal-cancel {
   font-weight: bold;
+  color: white;
   background-color: transparent;
   border: 2px solid white;
   cursor: pointer;
