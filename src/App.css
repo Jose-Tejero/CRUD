@@ -169,6 +169,7 @@ label {
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
+  font-size: small;
 
   /* Position the tooltip */
   position: absolute;
