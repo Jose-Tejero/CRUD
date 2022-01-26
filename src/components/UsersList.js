@@ -16,11 +16,11 @@ const UsersList = ({users, selectUser, deleteUser}) => {
                         <div className="edit-delete">
                             <button className='edit' onClick={() => selectUser(user)} style={{color: 'green'}}>
                                 <FontAwesomeIcon icon={faUserEdit} />
-                                <span class="tooltiptext-edit">Editar usuario</span>
+                                <span className="tooltiptext-edit">Editar usuario</span>
                             </button>
                             <button className='delete' onClick={() => deleteUser(user.id)} style={{color: 'red'}} >
                                 <FontAwesomeIcon icon={faTrash} />
-                                <span class="tooltiptext-delete">Eliminar usuario</span>
+                                <span className="tooltiptext-delete">Eliminar usuario</span>
                             </button>
                         </div>
                     </div>
