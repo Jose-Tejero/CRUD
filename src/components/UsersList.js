@@ -14,8 +14,14 @@ const UsersList = ({users, selectUser, deleteUser}) => {
                             <p><FontAwesomeIcon icon={faBirthdayCake} /> {user.birthday}</p>
                         </div>
                         <div className="edit-delete">
-                            <button className='edit' onClick={() => selectUser(user)} style={{color: 'green'}}><FontAwesomeIcon icon={faUserEdit} /></button>
-                            <button className='delete' onClick={() => deleteUser(user.id)} style={{color: 'red'}} ><FontAwesomeIcon icon={faTrash} /></button>
+                            <button className='edit' onClick={() => selectUser(user)} style={{color: 'green'}}>
+                                <FontAwesomeIcon icon={faUserEdit} />
+                                <span class="tooltiptext-edit">Editar usuario</span>
+                            </button>
+                            <button className='delete' onClick={() => deleteUser(user.id)} style={{color: 'red'}} >
+                                <FontAwesomeIcon icon={faTrash} />
+                                <span class="tooltiptext-delete">Eliminar usuario</span>
+                            </button>
                         </div>
                     </div>
                 ))
