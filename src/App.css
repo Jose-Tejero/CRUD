@@ -217,3 +217,31 @@ label {
   visibility: visible;
   opacity: 1;
 }
+
+.modal-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 50px;
+}
+
+.modal-buttons button {
+  width: 150px;
+  padding: 8px 0;
+  border-radius: 20px;
+}
+
+.modal-accept {
+  background-color: white;
+  color: #ff4646;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-cancel {
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+}

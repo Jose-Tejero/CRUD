@@ -29,8 +29,18 @@ const Modal = ({deleteUser, setIsModalOpen, isSelectedId}) => {
           <div style={subStyles}>
             <h2>¿Seguro desea eliminar este usuario?</h2>
             <div className="modal-buttons">
-                <button onClick={() => deleteUser(isSelectedId)}>Aceptar</button>
-                <button onClick={() => setIsModalOpen(false)}>Cancelar</button>
+                <button
+                    className='modal-accept'
+                    onClick={() => deleteUser(isSelectedId)}
+                >
+                    Aceptar
+                </button>
+                <button
+                    className='modal-cancel'
+                    onClick={() => setIsModalOpen(false)}
+                >
+                    Cancelar
+                </button>
             </div>
           </div>
         </div>
