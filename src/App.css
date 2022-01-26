@@ -242,7 +242,11 @@ label {
 .modal-cancel {
   font-weight: bold;
   color: white;
-  background-color: transparent;
+  background-color: #ff4646;
   border: 2px solid white;
   cursor: pointer;
+}
+
+.modal-title {
+  color: white;
 }

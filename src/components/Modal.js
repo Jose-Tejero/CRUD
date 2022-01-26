@@ -27,7 +27,7 @@ const Modal = ({deleteUser, setIsModalOpen, isSelectedId}) => {
     return (
         <div style={styles}>
           <div style={subStyles}>
-            <h2>¿Seguro desea eliminar este usuario?</h2>
+            <h2 className='modal-title' >¿Seguro desea eliminar este usuario?</h2>
             <div className="modal-buttons">
                 <button
                     className='modal-accept'
