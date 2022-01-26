@@ -2,7 +2,7 @@ import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBirthdayCake, faEnvelope, faTrash, faUserAlt, faUserEdit} from '@fortawesome/free-solid-svg-icons'
 
-const UsersList = ({users, selectUser, deleteUser}) => {
+const UsersList = ({users, selectUser, setIsModalOpen, setIsSelectedId}) => {
     return (
         <div className='cards-container'>
             {
@@ -18,7 +18,11 @@ const UsersList = ({users, selectUser, deleteUser}) => {
                                 <FontAwesomeIcon icon={faUserEdit} />
                                 <span className="tooltiptext-edit">Editar usuario</span>
                             </button>
-                            <button className='delete' onClick={() => deleteUser(user.id)} style={{color: 'red'}} >
+                            <button className='delete' onClick={() => {
+                                    setIsModalOpen(true);
+                                    setIsSelectedId(user.id);
+                                }} style={{color: 'red'}} >
+                                {/*  */}
                                 <FontAwesomeIcon icon={faTrash} />
                                 <span className="tooltiptext-delete">Eliminar usuario</span>
                             </button>

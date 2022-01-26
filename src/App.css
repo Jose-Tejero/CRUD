@@ -27,7 +27,7 @@ label {
 
 .App {
   display: grid;
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .cards-container {
@@ -178,6 +178,10 @@ label {
   left: 95%;
   margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
   
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+  
 }
 
 .delete .tooltiptext-delete {
@@ -198,12 +202,18 @@ label {
   left: 95%;
   margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
   
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+  
 }
 
 .edit:hover .tooltiptext-edit {
   visibility: visible;
+  opacity: 1;
 }
 
 .delete:hover .tooltiptext-delete {
   visibility: visible;
+  opacity: 1;
 }
